@@ -181,8 +181,8 @@
       "decoration": {
         "background_gradient": { "colors": ["#132D3C", "#0F3748"], "begin": "topLeft", "end": "bottomRight" },
         "border_radius": 20,
-        "border": {"color": "#A78BFA", "width": 2},
-        "shadow": { "color": "#A78BFA40", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "border": {"color": "#2A5F75", "width": 1.5},
+        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
       },
       "animation": {"type": "fade_scale", "duration": 800, "delay": 200},
       "children": [
@@ -201,7 +201,7 @@
                 { "type": "text", "content": "• Ovoz bilan qidirish\n• Rasm bilan qidirish\n• Narx tahlili\n• Sifat taqqoslash", "style": { "font_size": 14, "color": "#D1E0E8", "height": 1.5 } }
               ]
             },
-            { "type": "animated_icon", "icon": "auto_awesome", "size": 56, "gradient": true, "animation": { "type": "pulse_glow", "duration": 2000, "repeat": true } }
+            { "type": "lottie", "asset": "ai_robot", "box_fit":"contain", "repeat": true }
           ]
         },
         {"type": "sized_box", "height": 16},
@@ -214,11 +214,6 @@
           "background_gradient": { "colors": ["#FFFEF0", "#FFE89F", "#F4D589"] },
           "text_color": "#0A2937",
           "font_weight": "bold",
-          "shadow": {
-            "color": "#A78BFA50",
-            "blur_radius": 15,
-            "offset": {"x": 0, "y": 6}
-          },
           "animation": {"type": "pulse", "duration": 1500, "repeat": true},
           "action": {"type": "navigate", "route": "/aiPage"}
         }
