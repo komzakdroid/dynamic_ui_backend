@@ -7,8 +7,14 @@
     "type": "floating_particles",
     "particle_color": "#F4D58930",
     "particle_count": 30,
-    "particle_size": [2, 6],
-    "speed": [1, 3],
+    "particle_size": [
+      2,
+      6
+    ],
+    "speed": [
+      1,
+      3
+    ],
     "glow_effect": true,
     "glow_color": "#FAF1B550"
   },
@@ -18,7 +24,11 @@
     "text_color": "#FAF1B5",
     "elevation": 0,
     "title_gradient": {
-      "colors": ["#FAF1B5", "#F4D589", "#B27533"],
+      "colors": [
+        "#FAF1B5",
+        "#F4D589",
+        "#B27533"
+      ],
       "begin": "topCenter",
       "end": "bottomCenter"
     }
@@ -27,11 +37,22 @@
     {
       "id": "announcement_banner",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"top": 12, "left": 16, "right": 16, "bottom": 8},
+      "padding": {
+        "all": 20
+      },
+      "margin": {
+        "top": 12,
+        "left": 16,
+        "right": 16,
+        "bottom": 8
+      },
       "decoration": {
         "background_gradient": {
-          "colors": ["#FFFEF0", "#FFF8D8", "#FFE89F"],
+          "colors": [
+            "#FFFEF0",
+            "#FFF8D8",
+            "#FFE89F"
+          ],
           "begin": "topLeft",
           "end": "bottomRight"
         },
@@ -39,10 +60,17 @@
         "shadow": {
           "color": "#F4D58970",
           "blur_radius": 25,
-          "offset": {"x": 0, "y": 10}
+          "offset": {
+            "x": 0,
+            "y": 10
+          }
         }
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 0},
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 0
+      },
       "children": [
         {
           "type": "row",
@@ -50,10 +78,15 @@
           "children": [
             {
               "type": "container",
-              "padding": {"all": 12},
+              "padding": {
+                "all": 12
+              },
               "decoration": {
                 "background_gradient": {
-                  "colors": ["#0A2937", "#0F3748"],
+                  "colors": [
+                    "#0A2937",
+                    "#0F3748"
+                  ],
                   "begin": "topLeft",
                   "end": "bottomRight"
                 },
@@ -61,22 +94,52 @@
                 "shadow": {
                   "color": "#0A293750",
                   "blur_radius": 8,
-                  "offset": {"x": 0, "y": 4}
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  }
                 }
               },
               "children": [
-                { "type": "icon_widget", "icon": "celebration", "size": 32, "color": "#FFE89F" }
+                {
+                  "type": "icon_widget",
+                  "icon": "celebration",
+                  "size": 32,
+                  "color": "#FFE89F"
+                }
               ]
             },
-            {"type": "sized_box", "width": 16},
+            {
+              "type": "sized_box",
+              "width": 16
+            },
             {
               "type": "column",
               "cross_axis_alignment": "start",
               "flex": 1,
               "children": [
-                { "type": "text", "content": "YANGILIKNI ESHITDINGIZMI?", "style": { "font_size": 18, "font_weight": "bold", "color": "#0A2937" } },
-                {"type": "sized_box", "height": 4},
-                { "type": "text", "content": "Chakana mijozlar uchun bepul yetkazib berish boshlandi!", "style": { "font_size": 14, "color": "#0F3748", "height": 1.3 } }
+                {
+                  "type": "text",
+                  "content": "YANGILIKNI ESHITDINGIZMI?",
+                  "style": {
+                    "font_size": 18,
+                    "font_weight": "bold",
+                    "color": "#0A2937"
+                  }
+                },
+                {
+                  "type": "sized_box",
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "content": "Chakana mijozlar uchun bepul yetkazib berish boshlandi!",
+                  "style": {
+                    "font_size": 14,
+                    "color": "#0F3748",
+                    "height": 1.3
+                  }
+                }
               ]
             }
           ]
@@ -86,54 +149,223 @@
     {
       "id": "new_features_section",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 20
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 100},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topLeft",
+          "end": "bottomRight"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 100
+      },
       "children": [
-        { "type": "text", "content": "Yangi Imkoniyatlar", "style": { "font_size": 22, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-        {"type": "sized_box", "height": 16},
-        { "type": "feature_item", "icon": "local_shipping", "icon_color": "#34D399", "title": "Bepul Yetkazib Berish", "description": "Chakana xaridlar uchun mutlaqo bepul yetkazib berish xizmati", "badge": "YANGI", "badge_color": "#34D399" },
-        {"type": "sized_box", "height": 12},
-        { "type": "feature_item", "icon": "inventory_2", "icon_color": "#FBBF24", "title": "Barcha turdagi mahsulotlari", "description": "Barcha brendlarning tasdiqlangan va arzon mahsulotlari", "badge": "TOP", "badge_color": "#FBBF24" },
-        {"type": "sized_box", "height": 12},
-        { "type": "feature_item", "icon": "business_center", "icon_color": "#60A5FA", "title": "Ulgurji mijozlarga chegirmalar", "description": "Bizness egalariga maxsus manfaatli yetkazib berish", "badge": "BIZNESS", "badge_color": "#60A5FA" },
-        {"type": "sized_box", "height": 12},
-        { "type": "feature_item", "icon": "psychology", "icon_color": "#A78BFA", "title": "SAHIY AI Assistant", "description": "Mahsulotlarni solishtirish, narx tahlili va ovozli/rasmli qidiruv", "badge": "AI", "badge_color": "#A78BFA" },
-        {"type": "sized_box", "height": 12},
-        { "type": "feature_item", "icon": "photo_camera", "icon_color": "#F472B6", "title": "Foto Qidiruv", "description": "Ko'zingizga yoqqan mahsulotni rasmga olib qidiring!", "badge": "HOT", "badge_color": "#F472B6" }
+        {
+          "type": "text",
+          "content": "Yangi Imkoniyatlar",
+          "style": {
+            "font_size": 22,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
+        {
+          "type": "feature_item",
+          "icon": "local_shipping",
+          "icon_color": "#34D399",
+          "title": "Bepul Yetkazib Berish",
+          "description": "Chakana xaridlar uchun mutlaqo bepul yetkazib berish xizmati",
+          "badge": "YANGI",
+          "badge_color": "#34D399"
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "feature_item",
+          "icon": "business_center",
+          "icon_color": "#60A5FA",
+          "title": "Ulgurji mijozlarga chegirmalar",
+          "description": "Bizness egalariga maxsus manfaatli yetkazib berish",
+          "badge": "BIZNESS",
+          "badge_color": "#60A5FA"
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "feature_item",
+          "icon": "psychology",
+          "icon_color": "#A78BFA",
+          "title": "SAHIY AI Assistant",
+          "description": "Mahsulotlarni solishtirish, narx tahlili va ovozli/rasmli qidiruv",
+          "badge": "AI",
+          "badge_color": "#A78BFA"
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "feature_item",
+          "icon": "support_agent",
+          "icon_color": "#F97316",
+          "title": "24/7 Qo'llab-quvvatlash",
+          "description": "Ilova orqali 24/7 va filiallarda (10:00-19:00) yordam",
+          "badge": "24/7",
+          "badge_color": "#F97316"
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "feature_item",
+          "icon": "inventory_2",
+          "icon_color": "#FBBF24",
+          "title": "Barcha turdagi mahsulotlari",
+          "description": "Barcha brendlarning tasdiqlangan va arzon mahsulotlari",
+          "badge": "TOP",
+          "badge_color": "#FBBF24"
+        }
       ]
     },
     {
       "id": "feedback_section",
       "type": "container",
-      "padding": {"all": 24},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topCenter", "end": "bottomCenter" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 24
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 300},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topCenter",
+          "end": "bottomCenter"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 300
+      },
       "children": [
-        { "type": "text", "content": "Fikringiz Muhim!", "style": { "font_size": 22, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] }, "text_align": "center" } },
-        {"type": "sized_box", "height": 12},
-        { "type": "text", "content": "Sizga yana qanday imkoniyatlar kerak?", "style": { "font_size": 15, "color": "#D1E0E8", "text_align": "center", "height": 1.4 } },
-        {"type": "sized_box", "height": 20},
+        {
+          "type": "text",
+          "content": "Fikringiz Muhim!",
+          "style": {
+            "font_size": 22,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            },
+            "text_align": "center"
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "text",
+          "content": "Sizga yana qanday imkoniyatlar kerak?",
+          "style": {
+            "font_size": 15,
+            "color": "#D1E0E8",
+            "text_align": "center",
+            "height": 1.4
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 20
+        },
         {
           "type": "survey_group",
           "state_key": "survey_selections",
           "options": [
-            { "icon": "payments", "text": "Bo'lib to'lash imkoniyati", "value": "installment" },
-            { "icon": "speed", "text": "Tezroq yetkazib berish", "value": "faster_delivery" },
-            { "icon": "local_offer", "text": "Ko'proq mahsulotlar ko`rsatish", "value": "more_discounts" },
-            { "icon": "verified", "text": "Premium mijoz dasturi", "value": "premium_membership" }
+            {
+              "icon": "payments",
+              "text": "Bo'lib to'lash imkoniyati",
+              "value": "installment"
+            },
+            {
+              "icon": "speed",
+              "text": "Tezroq yetkazib berish",
+              "value": "faster_delivery"
+            },
+            {
+              "icon": "local_offer",
+              "text": "Ko'proq mahsulotlar ko`rsatish",
+              "value": "more_discounts"
+            },
+            {
+              "icon": "verified",
+              "text": "Premium mijoz dasturi",
+              "value": "premium_membership"
+            }
           ]
         }
       ]
@@ -141,28 +373,95 @@
     {
       "id": "free_delivery_usage",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 20
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 250},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topLeft",
+          "end": "bottomRight"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 250
+      },
       "children": [
-        { "type": "text", "content": "🚚 Bepul Yetkazib Berish", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-        {"type": "sized_box", "height": 16},
-        { "type": "text", "content": "Bepul yetkazib berish imkoniyatidan foydalandingizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
-        {"type": "sized_box", "height": 12},
+        {
+          "type": "text",
+          "content": "🚚 Bepul Yetkazib Berish",
+          "style": {
+            "font_size": 20,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
+        {
+          "type": "text",
+          "content": "Bepul yetkazib berish imkoniyatidan foydalandingizmi?",
+          "style": {
+            "font_size": 15,
+            "color": "#D1E0E8",
+            "height": 1.4
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
         {
           "type": "survey_group",
           "state_key": "used_free_delivery",
           "single_selection": true,
           "options": [
-            { "icon": "check_circle", "text": "Ha", "value": "yes" },
-            { "icon": "cancel", "text": "Yo'q", "value": "no" },
-            { "icon": "trending_down", "text": "Narxlar arzonlashini kutyapman", "value": "waiting_price_drop" }
+            {
+              "icon": "check_circle",
+              "text": "Ha",
+              "value": "yes"
+            },
+            {
+              "icon": "cancel",
+              "text": "Yo'q",
+              "value": "no"
+            },
+            {
+              "icon": "trending_down",
+              "text": "Narxlar arzonlashini kutyapman",
+              "value": "waiting_price_drop"
+            }
           ]
         }
       ]
@@ -170,49 +469,171 @@
     {
       "id": "wholesale_discount_usage",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 20
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 275},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topLeft",
+          "end": "bottomRight"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 275
+      },
       "children": [
-        { "type": "text", "content": "💼 Ulgurji Chegirmalar", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-        {"type": "sized_box", "height": 16},
-        { "type": "text", "content": "Ulgurji mijozlar uchun yetkazib berishdagi chegirmalardan foydalandingizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
-        {"type": "sized_box", "height": 12},
+        {
+          "type": "text",
+          "content": "💼 Ulgurji Chegirmalar",
+          "style": {
+            "font_size": 20,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
+        {
+          "type": "text",
+          "content": "Ulgurji mijozlar uchun yetkazib berishdagi chegirmalardan foydalandingizmi?",
+          "style": {
+            "font_size": 15,
+            "color": "#D1E0E8",
+            "height": 1.4
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
         {
           "type": "survey_group",
           "state_key": "used_wholesale_discount",
           "single_selection": true,
           "options": [
-            { "icon": "check_circle", "text": "Ha", "value": "yes" },
-            { "icon": "cancel", "text": "Yo'q", "value": "no" },
-            { "icon": "search_off", "text": "Kerakli mahsulotlarni topolmayapman", "value": "cannot_find_products" }
+            {
+              "icon": "check_circle",
+              "text": "Ha",
+              "value": "yes"
+            },
+            {
+              "icon": "cancel",
+              "text": "Yo'q",
+              "value": "no"
+            },
+            {
+              "icon": "search_off",
+              "text": "Kerakli mahsulotlarni topolmayapman",
+              "value": "cannot_find_products"
+            }
           ]
         }
       ]
     },
-      {
+    {
       "id": "customer_service_rating",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 20
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 300},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topLeft",
+          "end": "bottomRight"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 300
+      },
       "children": [
-        { "type": "text", "content": "🎯 Umumiy Baholash", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-        {"type": "sized_box", "height": 16},
-        { "type": "text", "content": "Qo'llab-quvvatlash xizmatimiz qanday?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
-        {"type": "sized_box", "height": 12},
+        {
+          "type": "text",
+          "content": "🎯 Umumiy Baholash",
+          "style": {
+            "font_size": 20,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
+        {
+          "type": "text",
+          "content": "Qo'llab-quvvatlash xizmatimiz qanday?",
+          "style": {
+            "font_size": 15,
+            "color": "#D1E0E8",
+            "height": 1.4
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
         {
           "type": "rating_bar",
           "state_key": "support_rating",
@@ -222,18 +643,48 @@
           "active_color": "#FAF1B5",
           "inactive_color": "#2A5F75"
         },
-        {"type": "sized_box", "height": 16},
-        { "type": "text", "content": "Do'stlaringizga tavsiya qilasizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
-        {"type": "sized_box", "height": 12},
+        {
+          "type": "sized_box",
+          "height": 16
+        },
+        {
+          "type": "text",
+          "content": "Do'stlaringizga tavsiya qilasizmi?",
+          "style": {
+            "font_size": 15,
+            "color": "#D1E0E8",
+            "height": 1.4
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
         {
           "type": "survey_group",
           "state_key": "would_recommend",
           "single_selection": true,
           "options": [
-            { "icon": "thumb_up", "text": "Albatta tavsiya qilaman", "value": "definitely" },
-            { "icon": "sentiment_satisfied", "text": "Ehtimol tavsiya qilaman", "value": "probably" },
-            { "icon": "sentiment_neutral", "text": "Bilmayman", "value": "unsure" },
-            { "icon": "thumb_down", "text": "Tavsiya qilmayman", "value": "no" }
+            {
+              "icon": "thumb_up",
+              "text": "Albatta tavsiya qilaman",
+              "value": "definitely"
+            },
+            {
+              "icon": "sentiment_satisfied",
+              "text": "Ehtimol tavsiya qilaman",
+              "value": "probably"
+            },
+            {
+              "icon": "sentiment_neutral",
+              "text": "Bilmayman",
+              "value": "unsure"
+            },
+            {
+              "icon": "thumb_down",
+              "text": "Tavsiya qilmayman",
+              "value": "no"
+            }
           ]
         }
       ]
@@ -241,20 +692,75 @@
     {
       "id": "feedback_section",
       "type": "container",
-      "padding": {"all": 24},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topCenter", "end": "bottomCenter" },
-        "border_radius": 20,
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 24
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 350},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#0F3748",
+            "#132D3C"
+          ],
+          "begin": "topCenter",
+          "end": "bottomCenter"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 350
+      },
       "children": [
-        { "type": "text", "content": "💬 Qo'shimcha Fikrlaringiz", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-        {"type": "sized_box", "height": 12},
-        { "type": "text", "content": "Bizni yaxshilash uchun takliflaringiz", "style": { "font_size": 14, "color": "#8B9DAA", "height": 1.3 } },
-        {"type": "sized_box", "height": 16},
+        {
+          "type": "text",
+          "content": "💬 Qo'shimcha Fikrlaringiz",
+          "style": {
+            "font_size": 20,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589",
+                "#B27533"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 12
+        },
+        {
+          "type": "text",
+          "content": "Bizni yaxshilash uchun takliflaringiz",
+          "style": {
+            "font_size": 14,
+            "color": "#8B9DAA",
+            "height": 1.3
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
         {
           "type": "text_field",
           "controller_key": "feedback_controller",
@@ -267,21 +773,33 @@
           "border_color": "#2A5F75",
           "focused_border_color": "#FFE89F"
         },
-        {"type": "sized_box", "height": 20},
+        {
+          "type": "sized_box",
+          "height": 20
+        },
         {
           "type": "button",
           "text": "Fikrlarni Yuborish",
           "icon": "send",
           "height": 56,
           "border_radius": 16,
-          "background_gradient": { "colors": ["#FFFEF0", "#FFE89F", "#F4D589"] },
+          "background_gradient": {
+            "colors": [
+              "#FFFEF0",
+              "#FFE89F",
+              "#F4D589"
+            ]
+          },
           "text_color": "#0A2937",
           "font_size": 16,
           "font_weight": "bold",
           "shadow": {
             "color": "#F4D58960",
             "blur_radius": 15,
-            "offset": {"x": 0, "y": 6}
+            "offset": {
+              "x": 0,
+              "y": 6
+            }
           },
           "action": {
             "type": "submit_feedback",
@@ -304,18 +822,45 @@
         }
       ]
     },
-     {
+    {
       "id": "ai_showcase",
       "type": "container",
-      "padding": {"all": 24},
-      "margin": {"left": 16, "right": 16, "bottom": 12},
-      "decoration": {
-        "background_gradient": { "colors": ["#132D3C", "#0F3748"], "begin": "topLeft", "end": "bottomRight" },
-        "border_radius": 20,
-      "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 24
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 200},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 12
+      },
+      "decoration": {
+        "background_gradient": {
+          "colors": [
+            "#132D3C",
+            "#0F3748"
+          ],
+          "begin": "topLeft",
+          "end": "bottomRight"
+        },
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 200
+      },
       "children": [
         {
           "type": "row",
@@ -327,55 +872,158 @@
               "cross_axis_alignment": "start",
               "flex": 1,
               "children": [
-                { "type": "text", "content": "SAHIY AI", "style": { "font_size": 24, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
-                {"type": "sized_box", "height": 8},
-                { "type": "text", "content": "• Ovoz bilan qidirish\n• Rasm bilan qidirish\n• Narx tahlili\n• Sifat taqqoslash", "style": { "font_size": 14, "color": "#D1E0E8", "height": 1.5 } }
+                {
+                  "type": "text",
+                  "content": "SAHIY AI",
+                  "style": {
+                    "font_size": 24,
+                    "font_weight": "bold",
+                    "gradient": {
+                      "colors": [
+                        "#FAF1B5",
+                        "#F4D589",
+                        "#B27533"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "sized_box",
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "content": "• Ovoz bilan qidirish\n• Rasm bilan qidirish\n• Narx tahlili\n• Sifat taqqoslash",
+                  "style": {
+                    "font_size": 14,
+                    "color": "#D1E0E8",
+                    "height": 1.5
+                  }
+                }
               ]
             },
-            { "type": "lottie", "asset": "ai_robot", "box_fit":"contain", "repeat": true }
+            {
+              "type": "lottie",
+              "asset": "ai_robot",
+              "box_fit": "contain",
+              "repeat": true
+            }
           ]
         },
-        {"type": "sized_box", "height": 16},
+        {
+          "type": "sized_box",
+          "height": 16
+        },
         {
           "type": "button",
           "text": "AI'ni Sinab Ko'ring",
           "icon": "touch_app",
           "height": 52,
           "border_radius": 26,
-          "background_gradient": { "colors": ["#FFFEF0", "#FFE89F", "#F4D589"] },
+          "background_gradient": {
+            "colors": [
+              "#FFFEF0",
+              "#FFE89F",
+              "#F4D589"
+            ]
+          },
           "text_color": "#0A2937",
           "font_weight": "bold",
-          "animation": {"type": "pulse", "duration": 1500, "repeat": true},
-          "action": {"type": "navigate", "route": "/aiPage"}
+          "animation": {
+            "type": "pulse",
+            "duration": 1500,
+            "repeat": true
+          },
+          "action": {
+            "type": "navigate",
+            "route": "/aiPage"
+          }
         }
       ]
     },
     {
       "id": "stats_section",
       "type": "container",
-      "padding": {"all": 20},
-      "margin": {"left": 16, "right": 16, "bottom": 20},
-      "decoration": { 
-        "background_color": "#132D3C", 
-        "border_radius": 20, 
-        "border": {"color": "#2A5F75", "width": 1.5},
-        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      "padding": {
+        "all": 20
       },
-      "animation": {"type": "fade_scale", "duration": 800, "delay": 500},
+      "margin": {
+        "left": 16,
+        "right": 16,
+        "bottom": 20
+      },
+      "decoration": {
+        "background_color": "#132D3C",
+        "border_radius": 20,
+        "border": {
+          "color": "#2A5F75",
+          "width": 1.5
+        },
+        "shadow": {
+          "color": "#00000050",
+          "blur_radius": 20,
+          "offset": {
+            "x": 0,
+            "y": 8
+          }
+        }
+      },
+      "animation": {
+        "type": "fade_scale",
+        "duration": 800,
+        "delay": 500
+      },
       "children": [
-        { "type": "text", "content": "Bizning Natijalar", "style": { "font_size": 18, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589"] } } },
-        {"type": "sized_box", "height": 16},
+        {
+          "type": "text",
+          "content": "Bizning Natijalar",
+          "style": {
+            "font_size": 18,
+            "font_weight": "bold",
+            "gradient": {
+              "colors": [
+                "#FAF1B5",
+                "#F4D589"
+              ]
+            }
+          }
+        },
+        {
+          "type": "sized_box",
+          "height": 16
+        },
         {
           "type": "row",
           "main_axis_alignment": "space_around",
           "children": [
-            { "type": "stat_item", "value": "1 milliard+", "label": "Mahsulotlar", "icon": "inventory", "gradient": true },
-            { "type": "stat_item", "value": "250K+", "label": "Mijozlar", "icon": "people", "gradient": true },
-            { "type": "stat_item", "value": "99%", "label": "Qoniqish", "icon": "star", "gradient": true }
+            {
+              "type": "stat_item",
+              "value": "1 milliard+",
+              "label": "Mahsulotlar",
+              "icon": "inventory",
+              "gradient": true
+            },
+            {
+              "type": "stat_item",
+              "value": "250K+",
+              "label": "Mijozlar",
+              "icon": "people",
+              "gradient": true
+            },
+            {
+              "type": "stat_item",
+              "value": "99%",
+              "label": "Qoniqish",
+              "icon": "star",
+              "gradient": true
+            }
           ]
         }
       ]
     },
-      {"type": "sized_box", "height": 20}
+    {
+      "type": "sized_box",
+      "height": 20
+    }
   ]
 }
