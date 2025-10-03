@@ -130,20 +130,137 @@
           "type": "survey_group",
           "state_key": "survey_selections",
           "options": [
-            { "icon": "speed", "text": "Tezroq yetkazib berish", "value": "faster_delivery" },
             { "icon": "payments", "text": "Bo'lib to'lash imkoniyati", "value": "installment" },
-            { "icon": "local_offer", "text": "Ko'proq chegirmalar", "value": "more_discounts" },
-            { "icon": "verified", "text": "Premium mijoz dasturi", "value": "premium_membership" },
-            { "icon": "auto_graph", "text": "Narx monitoring", "value": "price_tracking" }
+            { "icon": "speed", "text": "Tezroq yetkazib berish", "value": "faster_delivery" },
+            { "icon": "local_offer", "text": "Ko'proq mahsulotlar ko`rsatish", "value": "more_discounts" },
+            { "icon": "verified", "text": "Premium mijoz dasturi", "value": "premium_membership" }
           ]
+        }
+      ]
+    },
+    {
+      "id": "free_delivery_usage",
+      "type": "container",
+      "padding": {"all": 20},
+      "margin": {"left": 16, "right": 16, "bottom": 12},
+      "decoration": {
+        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
+        "border_radius": 20,
+        "border": {"color": "#2A5F75", "width": 1.5},
+        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      },
+      "animation": {"type": "fade_scale", "duration": 800, "delay": 250},
+      "children": [
+        { "type": "text", "content": "🚚 Bepul Yetkazib Berish", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
+        {"type": "sized_box", "height": 16},
+        { "type": "text", "content": "Bepul yetkazib berish imkoniyatidan foydalandingizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
+        {"type": "sized_box", "height": 12},
+        {
+          "type": "survey_group",
+          "state_key": "used_free_delivery",
+          "single_selection": true,
+          "options": [
+            { "icon": "check_circle", "text": "Ha", "value": "yes" },
+            { "icon": "cancel", "text": "Yo'q", "value": "no" },
+            { "icon": "trending_down", "text": "Narxlar arzonlashini kutyapman", "value": "waiting_price_drop" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wholesale_discount_usage",
+      "type": "container",
+      "padding": {"all": 20},
+      "margin": {"left": 16, "right": 16, "bottom": 12},
+      "decoration": {
+        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
+        "border_radius": 20,
+        "border": {"color": "#2A5F75", "width": 1.5},
+        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      },
+      "animation": {"type": "fade_scale", "duration": 800, "delay": 275},
+      "children": [
+        { "type": "text", "content": "💼 Ulgurji Chegirmalar", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
+        {"type": "sized_box", "height": 16},
+        { "type": "text", "content": "Ulgurji mijozlar uchun yetkazib berishdagi chegirmalardan foydalandingizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
+        {"type": "sized_box", "height": 12},
+        {
+          "type": "survey_group",
+          "state_key": "used_wholesale_discount",
+          "single_selection": true,
+          "options": [
+            { "icon": "check_circle", "text": "Ha", "value": "yes" },
+            { "icon": "cancel", "text": "Yo'q", "value": "no" },
+            { "icon": "search_off", "text": "Kerakli mahsulotlarni topolmayapman", "value": "cannot_find_products" }
+          ]
+        }
+      ]
+    },
+      {
+      "id": "customer_service_rating",
+      "type": "container",
+      "padding": {"all": 20},
+      "margin": {"left": 16, "right": 16, "bottom": 12},
+      "decoration": {
+        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topLeft", "end": "bottomRight" },
+        "border_radius": 20,
+        "border": {"color": "#2A5F75", "width": 1.5},
+        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      },
+      "animation": {"type": "fade_scale", "duration": 800, "delay": 300},
+      "children": [
+        { "type": "text", "content": "🎯 Umumiy Baholash", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
+        {"type": "sized_box", "height": 16},
+        { "type": "text", "content": "Qo'llab-quvvatlash xizmatimiz qanday?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
+        {"type": "sized_box", "height": 12},
+        {
+          "type": "rating_bar",
+          "state_key": "support_rating",
+          "max_rating": 5,
+          "initial_rating": 0,
+          "icon_size": 40,
+          "active_color": "#FAF1B5",
+          "inactive_color": "#2A5F75"
         },
-        {"type": "sized_box", "height": 20},
+        {"type": "sized_box", "height": 16},
+        { "type": "text", "content": "Do'stlaringizga tavsiya qilasizmi?", "style": { "font_size": 15, "color": "#D1E0E8", "height": 1.4 } },
+        {"type": "sized_box", "height": 12},
+        {
+          "type": "survey_group",
+          "state_key": "would_recommend",
+          "single_selection": true,
+          "options": [
+            { "icon": "thumb_up", "text": "Albatta tavsiya qilaman", "value": "definitely" },
+            { "icon": "sentiment_satisfied", "text": "Ehtimol tavsiya qilaman", "value": "probably" },
+            { "icon": "sentiment_neutral", "text": "Bilmayman", "value": "unsure" },
+            { "icon": "thumb_down", "text": "Tavsiya qilmayman", "value": "no" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback_section",
+      "type": "container",
+      "padding": {"all": 24},
+      "margin": {"left": 16, "right": 16, "bottom": 12},
+      "decoration": {
+        "background_gradient": { "colors": ["#0F3748", "#132D3C"], "begin": "topCenter", "end": "bottomCenter" },
+        "border_radius": 20,
+        "border": {"color": "#2A5F75", "width": 1.5},
+        "shadow": { "color": "#00000050", "blur_radius": 20, "offset": {"x": 0, "y": 8} }
+      },
+      "animation": {"type": "fade_scale", "duration": 800, "delay": 350},
+      "children": [
+        { "type": "text", "content": "💬 Qo'shimcha Fikrlaringiz", "style": { "font_size": 20, "font_weight": "bold", "gradient": { "colors": ["#FAF1B5", "#F4D589", "#B27533"] } } },
+        {"type": "sized_box", "height": 12},
+        { "type": "text", "content": "Bizni yaxshilash uchun takliflaringiz", "style": { "font_size": 14, "color": "#8B9DAA", "height": 1.3 } },
+        {"type": "sized_box", "height": 16},
         {
           "type": "text_field",
           "controller_key": "feedback_controller",
           "state_key": "feedback_text",
-          "hint": "Qo`shimcha takliflaringiz...",
-          "max_lines": 4,
+          "hint": "Masalan: Mobil ilova juda yaxshi, lekin...",
+          "max_lines": 5,
           "background_color": "#1A4A5C",
           "text_color": "#FFFEF0",
           "hint_color": "#8B9DAA",
@@ -153,12 +270,13 @@
         {"type": "sized_box", "height": 20},
         {
           "type": "button",
-          "text": "Taklif Yuborish",
+          "text": "Fikrlarni Yuborish",
           "icon": "send",
-          "height": 52,
+          "height": 56,
           "border_radius": 16,
           "background_gradient": { "colors": ["#FFFEF0", "#FFE89F", "#F4D589"] },
           "text_color": "#0A2937",
+          "font_size": 16,
           "font_weight": "bold",
           "shadow": {
             "color": "#F4D58960",
@@ -168,7 +286,20 @@
           "action": {
             "type": "submit_feedback",
             "route": "/feedback",
-            "include_state": ["feedback_text", "survey_selections"]
+            "include_state": [
+              "used_free_delivery",
+              "delivery_speed",
+              "price_comparison",
+              "price_satisfaction_rating",
+              "ai_features_used",
+              "ai_usefulness_rating",
+              "desired_features",
+              "support_rating",
+              "would_recommend",
+              "feedback_text"
+            ],
+            "success_message": "Rahmat! Fikringiz bizga juda muhim 💚",
+            "error_message": "Xatolik yuz berdi. Qayta urinib ko'ring"
           }
         }
       ]
