@@ -49,7 +49,7 @@ func main() {
 
 	go func() {
 		appLogger.Info(fmt.Sprintf("🌐 Server listening on http://%s", addr))
-		appLogger.Info(fmt.Sprintf("📱 Test: http://%s/api/v1/ui/survey", addr))
+		appLogger.Info(fmt.Sprintf("📱 Test: http://%s/api/v1/ui?screen=survey", addr))
 
 		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			appLogger.Fatal(fmt.Sprintf("Server failed: %v", err))

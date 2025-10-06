@@ -22,7 +22,7 @@ func SetupRoutes(uiService *services.UIService, log *logger.Logger) *mux.Router 
 	router.HandleFunc("/health/detailed", healthHandler.DetailedHealth).Methods("GET")
 
 	api := router.PathPrefix("/api/v1").Subrouter()
-	api.HandleFunc("/ui/{screen}", uiHandler.GetScreen).Methods("GET")
+	api.HandleFunc("/ui", uiHandler.GetScreen).Methods("GET")
 	api.HandleFunc("/ui/version", uiHandler.GetVersion).Methods("GET")
 	api.HandleFunc("/ui/screens", uiHandler.ListScreens).Methods("GET")
 	api.HandleFunc("/admin/cache/clear", uiHandler.ClearCache).Methods("POST")
